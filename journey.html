@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elycheikh Cheiguer - Portfolio</title>
+<meta name="description" content="Portfolio d'Elycheikh Cheiguer, &eacute;l&egrave;ve-ing&eacute;nieur en g&eacute;nie minier - g&eacute;otechnique, exploitation mini&egrave;re et min&eacute;ralurgie.">
+<link rel="icon" href="assets/img/headshot.jpg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell d-flex">
+  <nav class="app-sidebar offcanvas-lg offcanvas-start" tabindex="-1" id="appSidebar" aria-label="Navigation principale">
+    <div class="offcanvas-header d-lg-none">
+      <h2 class="offcanvas-title">Menu</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#appSidebar" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body sidebar-body">
+      <a class="sidebar-brand" href="index.html">
+        <img src="assets/img/headshot.jpg" alt="" class="sidebar-avatar" width="44" height="44">
+        <span class="sidebar-brand-text"><strong>Elycheikh Cheiguer</strong><span data-i18n="sidebar.role">G&eacute;nie Minier</span></span>
+      </a>
+      <div class="sidebar-presence"><span class="presence-dot" aria-hidden="true"></span><span data-i18n="hero.badge.title">Stage actuel</span></div>
+      <ul class="nav flex-column sidebar-nav">
+        <li class="nav-item"><a class="nav-link" data-nav href="index.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span data-i18n="nav.home">Accueil</span></a></li>
+        <li class="nav-item"><a class="nav-link" data-nav href="about.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg><span data-i18n="nav.about">&Agrave; propos</span></a></li>
+        <li class="nav-item"><a class="nav-link active" data-nav href="journey.html" aria-current="page"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg><span data-i18n="nav.education">Parcours</span></a></li>
+        <li class="nav-item"><a class="nav-link" data-nav href="projects.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg><span data-i18n="nav.projects">Projets</span></a></li>
+        <li class="nav-item"><a class="nav-link" data-nav href="skills.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg><span data-i18n="nav.skills">Comp&eacute;tences</span></a></li>
+        <li class="nav-item"><a class="nav-link" data-nav href="contact.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span data-i18n="nav.contact">Contact</span></a></li>
+      </ul>
+      <div class="sidebar-footer">
+        <div class="lang-toggle" role="group" aria-label="Language"><button type="button" data-lang-btn="fr">FR</button><button type="button" data-lang-btn="en">EN</button></div>
+        <div class="sidebar-social">
+          <a href="https://www.linkedin.com/in/elycheikh-cheiguer" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+          <a href="mailto:elycheikh.cheiguer@enim.ac.ma" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="app-main">
+    <div class="topbar-mobile d-lg-none">
+      <button type="button" class="hamburger-btn" data-bs-toggle="offcanvas" data-bs-target="#appSidebar" aria-controls="appSidebar" aria-label="Menu"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      <span class="mobile-brand">Elycheikh Cheiguer</span>
+    </div>
+    <div class="content-wrap">
+<section id="education" class="section reveal">
+        <span class="section-eyebrow" data-i18n="edu.eyebrow">Formation</span>
+        <h2 class="section-title" data-i18n="edu.title">Parcours académique</h2>
+        <p class="section-lead" data-i18n="edu.lead">Un double diplôme d'ingénieur construit entre la Mauritanie et le Maroc, complété par une formation spécialisée en géotechnique souterraine.</p>
+
+        <div class="card">
+          <div class="timeline">
+
+            <div class="timeline-item is-current">
+              <div class="timeline-date">2025 — 2027</div>
+              <h3 data-i18n="edu.item1.title">Double Diplôme d'Ingénieur — Mines et Infrastructures</h3>
+              <div class="org" data-i18n="edu.item1.org">École Nationale Supérieure des Mines de Rabat (ENSMR), Rabat, Maroc</div>
+              <p data-i18n="edu.item1.desc">Filière AE3S — Département Mines. Dernière année du double diplôme.</p>
+            </div>
+
+            <div class="timeline-item is-current">
+              <div class="timeline-date" data-i18n="edu.item2.date">Sept. 2026 — Fév. 2027 (en cours)</div>
+              <h3 data-i18n="edu.item2.title">Geotechnical Fundamentals for Underground Mining</h3>
+              <div class="org" data-i18n="edu.item2.org">Geotechnical Center of Excellence, University of Arizona — en ligne</div>
+              <p data-i18n="edu.item2.desc">Formation en ligne, boursier GMEF (Geotechnical Mining Education Fund).</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2023 — 2025</div>
+              <h3 data-i18n="edu.item3.title">Diplôme d'Ingénieur — Mines et Gestion des Ressources</h3>
+              <div class="org" data-i18n="edu.item3.org">E.S. Polytechnique Nouakchott, Mauritanie</div>
+              <p data-i18n="edu.item3.desc">Spécialisation géotechnique et génie minier.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2021 — 2023</div>
+              <h3 data-i18n="edu.item4.title">Classes Préparatoires — Concours National d'Ingénieurs (CNIM)</h3>
+              <div class="org" data-i18n="edu.item4.org">E.S. Polytechnique Nouakchott, Mauritanie</div>
+              <p data-i18n="edu.item4.desc">Admis au CNIM 2023.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date" data-i18n="edu.item5.date">—</div>
+              <h3 data-i18n="edu.item5.title">Baccalauréat, série Mathématiques</h3>
+              <div class="org" data-i18n="edu.item5.org">Lycée Militaire, Nouakchott, Mauritanie</div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+<section id="experience" class="section reveal">
+        <span class="section-eyebrow" data-i18n="exp.eyebrow">Expérience</span>
+        <h2 class="section-title" data-i18n="exp.title">Stages & expérience de terrain</h2>
+        <p class="section-lead" data-i18n="exp.lead">Trois stages consécutifs couvrant l'exploitation à ciel ouvert, la minéralurgie et la géotechnique.</p>
+
+        <!-- ===== FEATURED: SNIM case study ===== -->
+        <article class="card case-study">
+          <div class="case-hero" style="background-image:url('assets/img/hero-pit.jpg');">
+            <div class="case-hero-content">
+              <span class="badge-pill" data-i18n="exp.snim.badge">Stage le plus récent</span>
+              <h3 data-i18n="exp.snim.title">Stagiaire Ingénieur Production</h3>
+              <div class="org" data-i18n="exp.snim.org">SNIM — Siège Minier de Guelb El Rhein, Zouérate, Mauritanie</div>
+            </div>
+          </div>
+
+          <div class="case-stats">
+            <div class="case-stat"><b>3 Mt</b><span data-i18n="exp.snim.stat1">Objectif / mois</span></div>
+            <div class="case-stat"><b>45</b><span data-i18n="exp.snim.stat2">Camions CAT 789D</span></div>
+            <div class="case-stat"><b>10</b><span data-i18n="exp.snim.stat3">Pelles PH / RH</span></div>
+            <div class="case-stat"><b>42</b><span data-i18n="exp.snim.stat4">Cycles chronométrés</span></div>
+            <div class="case-stat"><b>80,7 %</b><span data-i18n="exp.snim.stat5">Efficacité opérationnelle</span></div>
+          </div>
+
+          <div class="case-nav" role="tablist">
+            <button class="case-nav-btn active" data-case-tab="context" type="button" data-i18n="exp.snim.tab1">Contexte</button>
+            <button class="case-nav-btn" data-case-tab="tool" type="button" data-i18n="exp.snim.tab2">Outil développé</button>
+            <button class="case-nav-btn" data-case-tab="diagnosis" type="button" data-i18n="exp.snim.tab3">Diagnostic</button>
+            <button class="case-nav-btn" data-case-tab="actions" type="button" data-i18n="exp.snim.tab4">Actions &amp; résultats</button>
+          </div>
+
+          <!-- PANE 1 — CONTEXT -->
+          <div class="case-pane active" data-case-pane="context">
+            <p data-i18n="exp.snim.ctx.p1">Stage assistant ingénieur (juillet–septembre 2026) sur le secteur PB2-Est de la mine à ciel ouvert de Guelb El Rhein, le gisement de magnétite le plus riche de la SNIM et désormais le principal moteur de production du siège. Objectif fixé par la direction : une cadence de 3 Mt/mois (minerai et stérile confondus), soutenue par une flotte de 45 camions rigides CAT 789D couplée à des pelles électriques à câble (PH) et hydrauliques (RH).</p>
+            <p data-i18n="exp.snim.ctx.p2">Le suivi existant de la section Roulage/Chargement reposait uniquement sur les données du système de gestion de flotte (Dispatch FMS, Modular Mining) agrégées à l'échelle de toute la fosse. Cette approche masquait trois limites structurelles : des indicateurs calculés globalement sans distinction par secteur, une couverture réseau et des écrans embarqués partiellement défaillants sur plus de la moitié de la flotte, et une incapacité à qualifier la nature réelle des temps d'arrêt. Résultat : en juillet 2026, les indicateurs globaux affichaient une performance conforme, voire supérieure aux objectifs, alors que la production réelle du secteur ne représentait qu'une fraction de l'objectif — signe que ces indicateurs ne permettaient ni de diagnostiquer, ni de prévoir l'écart de production.</p>
+            <div class="case-gallery">
+              <figure><img src="assets/img/snim-ppe.jpg" alt="Sur le site de la SNIM, Guelb El Rhein"><figcaption data-i18n="exp.snim.gal1">Sur site, Guelb El Rhein</figcaption></figure>
+              <figure><img src="assets/img/snim-loading.jpg" alt="Pelle électrique et camions CAT 789 en chargement"><figcaption data-i18n="exp.snim.gal2">Chargement — pelle &amp; camions CAT 789</figcaption></figure>
+              <figure><img src="assets/img/snim-drill.jpg" alt="Sondeuse de production en opération"><figcaption data-i18n="exp.snim.gal3">Sondeuse de production, PB2-Est</figcaption></figure>
+            </div>
+          </div>
+
+          <!-- PANE 2 — TOOL -->
+          <div class="case-pane" data-case-pane="tool">
+            <h4 data-i18n="exp.snim.tool.h1">Chrono Cycle Camion — plateforme de mesure développée pendant le stage</h4>
+            <p data-i18n="exp.snim.tool.p1">Face aux limites du dispatching automatique, j'ai conçu et déployé sur le terrain une plateforme de chronométrage dédiée, baptisée <strong>Chrono Cycle Camion</strong>, afin de mesurer objectivement les temps de cycle réels des camions et les retards opérationnels qui les composent. L'interface (HTML/CSS avec Bootstrap, JavaScript) permet d'enregistrer, étape par étape, le cycle complet d'un camion — chargement, trajet chargé, bennage, trajet à vide — avec un traitement des données en Python côté back-end et une consolidation dans un fichier Excel exploitable statistiquement.</p>
+            <p data-i18n="exp.snim.tool.p2">La collecte a nécessité une présence physique prolongée sur le terrain, y compris de nuit, afin de couvrir l'ensemble des conditions d'exploitation (relève, éclairage, trafic) susceptibles d'influencer les temps de cycle. Le tableau de bord intégré calcule automatiquement les indicateurs clés (ACT moyen, efficacité opérationnelle TCT/ACT, tonnage total) ainsi qu'un diagramme de Pareto des causes de retard, outil central du diagnostic présenté dans l'onglet suivant.</p>
+            <div class="case-gallery">
+              <figure><img src="assets/img/chrono-ui.jpg" alt="Interface de la plateforme Chrono Cycle Camion"><figcaption data-i18n="exp.snim.gal4">Interface de saisie — Chrono Cycle Camion</figcaption></figure>
+              <figure><img src="assets/img/snim-cabin.jpg" alt="Terminal Dispatch embarqué en cabine de camion"><figcaption data-i18n="exp.snim.gal5">Poste de conduite — terminal Dispatch embarqué</figcaption></figure>
+            </div>
+            <div>
+              <span class="tool-chip">HTML5 / CSS3 / Bootstrap</span>
+              <span class="tool-chip">JavaScript</span>
+              <span class="tool-chip">Python</span>
+              <span class="tool-chip">Excel</span>
+              <span class="tool-chip">Surpac</span>
+              <span class="tool-chip" data-i18n="exp.snim.tool.chip1">Dispatch / Modular Mining FMS</span>
+            </div>
+          </div>
+
+          <!-- PANE 3 — DIAGNOSIS -->
+          <div class="case-pane" data-case-pane="diagnosis">
+            <p data-i18n="exp.snim.diag.p1">Sur 42 cycles chronométrés, le temps de cycle réel moyen (ACT) atteint 37 min 17 s pour un temps de cycle théorique (TCT) calculé à partir de la géométrie exacte des pistes (Surpac) de 17 min 53 s — une perte moyenne de plus de 8 minutes par cycle. Le diagramme de Pareto des retards détaillés fait ressortir trois causes qui concentrent, à elles seules, 80 % des pertes de temps cumulées :</p>
+            <div class="pareto">
+              <div class="pareto-col"><span class="pareto-pct">45%</span><div class="pareto-bar" style="height:90%"></div><span class="pareto-label">TQL</span></div>
+              <div class="pareto-col"><span class="pareto-pct">23%</span><div class="pareto-bar" style="height:46%"></div><span class="pareto-label">TQT</span></div>
+              <div class="pareto-col"><span class="pareto-pct">14%</span><div class="pareto-bar" style="height:28%"></div><span class="pareto-label">TFD</span></div>
+              <div class="pareto-col"><span class="pareto-pct">5%</span><div class="pareto-bar" style="height:10%"></div><span class="pareto-label">TGW-R2</span></div>
+              <div class="pareto-col"><span class="pareto-pct">4%</span><div class="pareto-bar" style="height:8%"></div><span class="pareto-label">TSD2+DCC</span></div>
+              <div class="pareto-col"><span class="pareto-pct">3%</span><div class="pareto-bar" style="height:6%"></div><span class="pareto-label">TGW-R</span></div>
+              <div class="pareto-col"><span class="pareto-pct">3%</span><div class="pareto-bar" style="height:6%"></div><span class="pareto-label">TGW-C2</span></div>
+              <div class="pareto-col"><span class="pareto-pct">2%</span><div class="pareto-bar" style="height:4%"></div><span class="pareto-label">TGW-C</span></div>
+            </div>
+            <ul>
+              <li data-i18n="exp.snim.diag.li1"><strong>TQL — temps de queue au chargement (45 %) :</strong> présent dans 31 des 41 cycles valides. Cause première identifiée : défaillance du dispatching automatique (couverture réseau incomplète, écrans embarqués en panne sur plus de 50 % de la flotte), aggravée par l'hétérogénéité mécanique des pelles — la pelle PH5, dégradée, immobilisait le couple pelle-camion près du double du temps d'une pelle en bon état.</li>
+              <li data-i18n="exp.snim.diag.li2"><strong>TQT — temps de queue au bennage (23 %) :</strong> lié au même mécanisme de file d'attente côté concasseurs (CC1/CC2), amplifié par leurs arrêts inopinés.</li>
+              <li data-i18n="exp.snim.diag.li3"><strong>TGW-R — cédez-le-passage en ligne droite :</strong> cause directement géométrique. La largeur mesurée des rampes en lacet (22 à 34 m) descend, sur une portion significative du tracé, sous le minimum requis pour un croisement bidirectionnel (≈ 30 m pour un CAT 789D), contraignant les camions à s'arrêter pour se céder le passage.</li>
+              <li data-i18n="exp.snim.diag.li4"><strong>Retards liés à la vitesse :</strong> résistance au roulement recalibrée à partir des pentes réelles (2,2 à 3,4 % selon la rampe, contre 2 % en piste idéale), couche de roulement non compactée, et effet de convoi causé par des camions vieillissants plafonnant à 60–85 % de leur puissance nominale.</li>
+            </ul>
+          </div>
+
+          <!-- PANE 4 — ACTIONS -->
+          <div class="case-pane" data-case-pane="actions">
+            <p data-i18n="exp.snim.act.p1">Pour chaque cause identifiée, j'ai chiffré l'impact attendu d'une action corrective ciblée, à partir des données mesurées sur le terrain :</p>
+            <ul>
+              <li data-i18n="exp.snim.act.li1"><strong>Double spotting au chargement :</strong> faire chevaucher la manœuvre de mise en position du camion suivant avec le chargement en cours élimine le TST du chemin critique — gain démontré de 5,6 min sur une file de 6 camions.</li>
+              <li data-i18n="exp.snim.act.li2"><strong>Fiabilisation de la pelle PH5 :</strong> ramener son temps de chargement au niveau des pelles PH9/PH10 réduit le TQL en 6<sup>e</sup> position de 26,4 à 13,75 min, soit un gain de 12,65 min par camion affecté.</li>
+              <li data-i18n="exp.snim.act.li3"><strong>Équilibrage actif du dispatching entre concasseurs :</strong> répartir le flux entre CC1 et CC2 plutôt que de laisser le dispatching orienter les camions indifféremment réduit le TQT d'environ 60 % pour une file de 6 camions.</li>
+              <li data-i18n="exp.snim.act.li4"><strong>Élargissement des pistes en lacet :</strong> porter la largeur à ≥ 30 m sur l'ensemble du tracé éliminerait, en théorie, la totalité du TGW-R mesuré — soit 17,3 s par cycle en moyenne.</li>
+              <li data-i18n="exp.snim.act.li5"><strong>Réhabilitation de la couche de roulement :</strong> ramener la résistance au roulement à ≤ 2 % (mélange stérile concassé + sable, CBR &gt; 80, compactage &gt; 95 %) et remettre en état les camions plafonnés en puissance.</li>
+            </ul>
+            <div class="quote-block" data-i18n="exp.snim.act.quote">« La démarche actuelle permet de constater l'écart de production, mais pas de diagnostiquer avec précision la part imputable aux pertes opérationnelles du cycle de roulage/chargement — c'est de ce constat qu'est né le sujet du stage. »</div>
+          </div>
+
+        </article>
+
+        <!-- ===== OTHER EXPERIENCES ===== -->
+        <div class="row g-3">
+          <div class="col-md-6">
+            <article class="card exp-card h-100">
+              <div class="exp-head">
+                <div>
+                  <h3 data-i18n="exp.fqm.title">Stagiaire Ingénieur Métallurgiste</h3>
+                  <div class="org" data-i18n="exp.fqm.org">First Quantum Minerals (MCM) — Akjoujt, Mauritanie</div>
+                  <div class="meta" data-i18n="exp.fqm.meta">Juillet 2025 — Septembre 2025</div>
+                </div>
+              </div>
+              <div class="exp-body">
+                <p data-i18n="exp.fqm.desc">Optimisation des paramètres opératoires du broyeur semi-autogène (SAG) et identification exhaustive des arrêts et pertes de temps sur les circuits de l'usine de traitement. Suivi opérationnel de l'usine visant à améliorer l'efficacité de la comminution et le débit de traitement.</p>
+                <div>
+                  <span class="badge-pill" data-i18n="exp.fqm.tag1">Optimisation broyeur SAG</span>
+                  <span class="badge-pill" data-i18n="exp.fqm.tag2">Analyse des arrêts</span>
+                  <span class="badge-pill" data-i18n="exp.fqm.tag3">Suivi des procédés</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="card exp-card h-100">
+              <div class="exp-head">
+                <div>
+                  <h3 data-i18n="exp.smh.title">Stagiaire Ingénieur Géotechnicien</h3>
+                  <div class="org" data-i18n="exp.smh.org">SMH — Société Mauritanienne des Hydrocarbures, Nouakchott</div>
+                  <div class="meta" data-i18n="exp.smh.meta">Juillet 2024 — Septembre 2024</div>
+                </div>
+              </div>
+              <div class="exp-body">
+                <p data-i18n="exp.smh.desc">Rédaction de rapports de géologie de forage ; identification, classification et essais mécaniques des sols ; interprétation sismique et exploitation de données d'archives.</p>
+                <div>
+                  <span class="badge-pill" data-i18n="exp.smh.tag1">Géologie de forage</span>
+                  <span class="badge-pill" data-i18n="exp.smh.tag2">Interprétation sismique</span>
+                  <span class="badge-pill" data-i18n="exp.smh.tag3">Classification des sols</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <span>&copy; <span id="year"></span> Elycheikh Cheiguer.</span>
+        <span data-i18n="footer.built">Designed &amp; built with HTML, CSS and JavaScript.</span>
+      </footer>
+    </div>
+  </main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
