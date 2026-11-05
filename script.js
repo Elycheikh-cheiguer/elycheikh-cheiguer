@@ -26,7 +26,7 @@
 
       "hero.kicker": "Élève-ingénieur · Génie Minier",
       "hero.title1": "Bonjour, je suis",
-      "hero.sub": "Élève-ingénieur en double diplôme (ENSMR Rabat / E.S. Polytechnique Nouakchott), spécialisé en génie minier et géotechnique. Expérience de terrain en exploitation à ciel ouvert, minéralurgie et études géotechniques — à la recherche d'un stage de fin d'études à partir de janvier 2027.",
+      "hero.sub": "Élève-ingénieur en double diplôme (ENSMR Rabat / E.S. Polytechnique Nouakchott), spécialisé en génie minier et géotechnique. Je poursuis actuellement une formation en géotechnique souterraine au Geotechnical Center of Excellence de l'Université d'Arizona. Expérience de terrain en exploitation à ciel ouvert, minéralurgie et études géotechniques — à la recherche d'un stage de fin d'études à partir de janvier 2027.",
       "hero.cta.cv": "Télécharger le CV",
       "hero.cta.contact": "Me contacter",
       "hero.stat1": "Stages terrain",
@@ -208,7 +208,7 @@
 
       "hero.kicker": "Mining Engineering Student",
       "hero.title1": "Hi, I'm",
-      "hero.sub": "Double-degree mining engineering student (Rabat School of Mines / E.S. Polytechnique Nouakchott), specialized in mining and geotechnical engineering. Hands-on field experience in open pit operations, mineral processing and geotechnical studies — searching for a final-year internship starting January 2027.",
+      "hero.sub": "Double-degree mining engineering student (Rabat School of Mines / E.S. Polytechnique Nouakchott), specialized in mining and geotechnical engineering. I am currently pursuing training in underground geotechnics at the University of Arizona's Geotechnical Center of Excellence. Hands-on field experience in open pit operations, mineral processing and geotechnical studies — searching for a final-year internship starting January 2027.",
       "hero.cta.cv": "Download CV",
       "hero.cta.contact": "Get in touch",
       "hero.stat1": "Field internships",
