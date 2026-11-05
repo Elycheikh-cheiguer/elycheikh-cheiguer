@@ -132,16 +132,30 @@
 
       "proj.eyebrow": "Projets académiques",
       "proj.title": "Projets de recherche &amp; conception",
-      "proj.lead": "Deux projets menés en parallèle du cursus, mêlant modélisation minière classique et apprentissage profond.",
-      "proj.p1.title": "Classification automatisée de la granulométrie",
+      "proj.lead": "Deux études appliquées : mesurer la granulométrie des minerais par vision par ordinateur et optimiser une fosse à ciel ouvert sous contraintes de pente.",
+      "proj.p1.title": "Estimation automatisée de la granulométrie sur micrographies",
       "proj.p1.meta": "Oct. 2025 — Janv. 2026 · ENSMR, Rabat",
-      "proj.p1.desc": "Analyse granulométrique par apprentissage profond : conception d'une architecture U-NET pour la segmentation sémantique d'images de tas de minerai, en vue d'automatiser l'estimation de la distribution granulométrique.",
+      "proj.p1.desc": "Conception d'une chaîne reproductible de traitement d'images pour segmenter les grains d'un minerai et estimer leur distribution granulométrique à partir de micrographies.",
       "proj.p1.tag": "Vision par ordinateur",
-      "proj.p2.title": "Conception d'une fosse à ciel ouvert sous Surpac",
-      "proj.p2.meta": "Mars — Mai 2025 · E.S. Polytechnique Nouakchott",
-      "proj.p2.desc": "Modélisation du gisement, optimisation de la fosse ultime par les algorithmes de Lerchs-Grossmann et du cône flottant, optimisation des angles de talus et du design de fosse.",
-      "proj.p2.tag1": "Lerchs-Grossmann",
-      "proj.p2.tag2": "Pit design",
+      "proj.p1.imageAlt": "Exemple d'analyse granulométrique : image de référence, grains segmentés et mesures individuelles",
+      "proj.p1.imageCaption": "Exemple de segmentation et de mesure des grains",
+      "proj.p1.methodTitle": "Méthode",
+      "proj.p1.method": "Prétraitement et calibration pixel–micron, comparaison de segmentations classiques (seuillage et gradient Canny), détection de contours HED et expérimentation d'un U-Net combinant l'image et des cartes de contours. Les masques sont évalués avec Dice, IoU, précision et rappel.",
+      "proj.p1.outputTitle": "Mesures &amp; résultats",
+      "proj.p1.output": "Les composantes segmentées alimentent des mesures par grain : aire, périmètre, diamètre équivalent, axes principaux et secondaires, circularité et rapport d'aspect. Le notebook rassemble 7&nbsp;623 enregistrements et produit des tableaux et distributions granulométriques, en pixels comme en unités physiques.",
+      "proj.p1.report": "Lire le rapport complet (PDF)",
+      "proj.p2.title": "Optimisation d'une fosse ultime à ciel ouvert",
+      "proj.p2.meta": "Mars — Mai 2025 · E.S. Polytechnique Nouakchott · avec Hajar Elghelmani et Ismael Benchelh · rapport daté du 10 janv. 2026",
+      "proj.p2.desc": "Étude collaborative d'optimisation de fosse par Lerchs–Grossmann : formulation d'un modèle de blocs et résolution de la limite économique sous une contrainte de pente de 45°.",
+      "proj.p2.imageAlt": "Visualisation 3D d'un modèle minier pour l'étude de fosse à ciel ouvert",
+      "proj.p2.imageCaption": "Visualisation 3D du modèle minier",
+      "proj.p2.methodTitle": "Modélisation",
+      "proj.p2.method": "Un gisement simplifié de 5 lignes × 8 colonnes attribue un profit à chacun des 40 blocs. Les relations de précédence représentant la pente relient les blocs qui doivent être extraits ensemble. Un graphe de flot maximal/coupe minimale (NetworkX) détermine l'ensemble optimal.",
+      "proj.p2.outputTitle": "Résultat du cas étudié",
+      "proj.p2.output": "Pour ce jeu de données pédagogique, la solution satisfait les contraintes de précédence, sélectionne 16 blocs et atteint un objectif de profit de 19 unités du modèle. Les blocs et la matrice de fosse sont exportés pour vérification et visualisation.",
+      "proj.p2.tag1": "Lerchs–Grossmann",
+      "proj.p2.tag2": "Pente 45°",
+      "proj.p2.report": "Lire le rapport complet (PDF)",
 
       "skills.eyebrow": "Compétences",
       "skills.title": "Compétences &amp; outils",
@@ -300,16 +314,30 @@
 
       "proj.eyebrow": "Academic projects",
       "proj.title": "Research &amp; design projects",
-      "proj.lead": "Two projects run alongside coursework, combining classic mine modeling with deep learning.",
-      "proj.p1.title": "Automated grain-size classification",
+      "proj.lead": "Two applied studies: measuring ore grain size with computer vision and optimizing an open pit under slope constraints.",
+      "proj.p1.title": "Automated grain-size estimation from micrographs",
       "proj.p1.meta": "Oct 2025 — Jan 2026 · ENSMR, Rabat",
-      "proj.p1.desc": "Particle size analysis via deep learning: designed a U-NET architecture for semantic segmentation of ore pile images, aimed at automating grain-size distribution estimation.",
+      "proj.p1.desc": "A reproducible image-processing pipeline to segment ore grains and estimate their size distribution from micrographs.",
       "proj.p1.tag": "Computer vision",
-      "proj.p2.title": "Open pit design in Surpac",
-      "proj.p2.meta": "Mar — May 2025 · E.S. Polytechnique Nouakchott",
-      "proj.p2.desc": "Orebody modeling, ultimate pit optimization using the Lerchs-Grossmann and floating-cone algorithms, and optimization of pit slope angles and overall pit design.",
-      "proj.p2.tag1": "Lerchs-Grossmann",
-      "proj.p2.tag2": "Pit design",
+      "proj.p1.imageAlt": "Grain-size analysis example showing the reference image, segmented grains, and individual measurements",
+      "proj.p1.imageCaption": "Example of grain segmentation and measurement",
+      "proj.p1.methodTitle": "Method",
+      "proj.p1.method": "Image preprocessing and pixel-to-micron calibration; comparison of classical segmentation (thresholding and Canny gradients); HED edge detection; and experiments with a U-Net that combines the image with edge maps. Masks are evaluated using Dice, IoU, precision, and recall.",
+      "proj.p1.outputTitle": "Measurements &amp; results",
+      "proj.p1.output": "Connected components from the masks are used to measure grain area, perimeter, equivalent diameter, major and minor axes, circularity, and aspect ratio. The notebook brings together 7,623 records and produces tables and grain-size distributions in pixels and physical units.",
+      "proj.p1.report": "Read the full report (PDF)",
+      "proj.p2.title": "Ultimate open-pit optimization",
+      "proj.p2.meta": "Mar — May 2025 · E.S. Polytechnique Nouakchott · with Hajar Elghelmani and Ismael Benchelh · report dated 10 Jan 2026",
+      "proj.p2.desc": "A collaborative Lerchs–Grossmann pit-optimization study: building a block model and solving for its economic limit under a 45° slope constraint.",
+      "proj.p2.imageAlt": "3D mining-model visualization for an open-pit study",
+      "proj.p2.imageCaption": "3D visualization of the mining model",
+      "proj.p2.methodTitle": "Model",
+      "proj.p2.method": "A simplified deposit of 5 rows × 8 columns assigns a profit to each of 40 blocks. Slope precedence relationships connect blocks that must be mined together. A maximum-flow/minimum-cut graph (NetworkX) determines the optimal set.",
+      "proj.p2.outputTitle": "Result for the studied case",
+      "proj.p2.output": "For this academic dataset, the solution satisfies the precedence constraints, selects 16 blocks, and reaches a model profit objective of 19 units. The block list and pit matrix are exported for verification and visualization.",
+      "proj.p2.tag1": "Lerchs–Grossmann",
+      "proj.p2.tag2": "45° slope",
+      "proj.p2.report": "Read the full report (PDF)",
 
       "skills.eyebrow": "Skills",
       "skills.title": "Skills &amp; tools",
@@ -374,6 +402,13 @@
       const key = el.getAttribute("data-i18n");
       if (Object.prototype.hasOwnProperty.call(dict, key)) {
         el.innerHTML = dict[key];
+      }
+    });
+
+    document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
+      const key = el.getAttribute("data-i18n-alt");
+      if (Object.prototype.hasOwnProperty.call(dict, key)) {
+        el.setAttribute("alt", dict[key]);
       }
     });
 

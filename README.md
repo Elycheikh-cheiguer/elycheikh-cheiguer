@@ -15,6 +15,8 @@ connection. Use the links in the sidebar to move between the six pages:
 - `contact.html` — contact
 
 Edit each page in its HTML file, site-wide appearance in `style.css`, and
-language and interactions in `script.js`. Images and CV files are in `assets/`.
+language and interactions in `script.js`. Images and CV files are in `assets/`;
+project visuals are in `assets/img/` and downloadable project reports are in
+`assets/projects/`.
 # elycheikh-cheiguer
 # elycheikh-cheiguer

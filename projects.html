@@ -53,30 +53,71 @@
         <h2 class="section-title" data-i18n="proj.title">Projets de recherche &amp; conception</h2>
         <p class="section-lead" data-i18n="proj.lead">Deux projets menés en parallèle du cursus, mêlant modélisation minière classique et apprentissage profond.</p>
 
-        <div class="row g-3">
-          <div class="col-md-6">
-            <div class="card project-card">
-              <h3 data-i18n="proj.p1.title">Classification automatisée de la granulométrie</h3>
-              <div class="meta" data-i18n="proj.p1.meta">Oct. 2025 — Janv. 2026 · ENSMR, Rabat</div>
-              <p data-i18n="proj.p1.desc">Analyse granulométrique par apprentissage profond : conception d'une architecture U-NET pour la segmentation sémantique d'images de tas de minerai, en vue d'automatiser l'estimation de la distribution granulométrique.</p>
-              <div>
-                <span class="badge-pill">Python</span>
-                <span class="badge-pill">U-NET</span>
-                <span class="badge-pill" data-i18n="proj.p1.tag">Vision par ordinateur</span>
+        <div class="row g-4">
+          <div class="col-12">
+            <article class="card project-card">
+              <figure class="project-visual">
+                <img src="assets/img/grain-size-segmentation.jpg" alt="Exemple d'analyse granulométrique : image de référence, grains segmentés et mesures individuelles" data-i18n-alt="proj.p1.imageAlt" width="1280" height="720" loading="lazy" decoding="async">
+                <figcaption data-i18n="proj.p1.imageCaption">Exemple de segmentation et de mesure des grains</figcaption>
+              </figure>
+              <div class="project-content">
+                <h3 data-i18n="proj.p1.title">Estimation automatisée de la granulométrie sur micrographies</h3>
+                <div class="meta" data-i18n="proj.p1.meta">Oct. 2025 — Janv. 2026 · ENSMR, Rabat</div>
+                <p class="project-summary" data-i18n="proj.p1.desc">Conception d'une chaîne reproductible de traitement d'images pour segmenter les grains d'un minerai et estimer leur distribution granulométrique à partir de micrographies.</p>
+                <div class="project-details">
+                  <div class="project-detail">
+                    <h4 data-i18n="proj.p1.methodTitle">Méthode</h4>
+                    <p data-i18n="proj.p1.method">Prétraitement et calibration pixel–micron, comparaison de segmentations classiques (seuillage et gradient Canny), détection de contours HED et expérimentation d'un U-Net combinant l'image et des cartes de contours. Les masques sont évalués avec Dice, IoU, précision et rappel.</p>
+                  </div>
+                  <div class="project-detail">
+                    <h4 data-i18n="proj.p1.outputTitle">Mesures &amp; résultats</h4>
+                    <p data-i18n="proj.p1.output">Les composantes segmentées alimentent des mesures par grain : aire, périmètre, diamètre équivalent, axes principaux et secondaires, circularité et rapport d'aspect. Le notebook rassemble 7&nbsp;623 enregistrements et produit des tableaux et distributions granulométriques, en pixels comme en unités physiques.</p>
+                  </div>
+                </div>
+                <div class="project-footer">
+                  <div class="project-tags">
+                    <span class="badge-pill">Python</span>
+                    <span class="badge-pill">OpenCV</span>
+                    <span class="badge-pill">HED</span>
+                    <span class="badge-pill">U-Net</span>
+                    <span class="badge-pill" data-i18n="proj.p1.tag">Vision par ordinateur</span>
+                  </div>
+                  <a class="project-report-link" href="assets/projects/grain-size-estimation-report.pdf" target="_blank" rel="noopener noreferrer" data-i18n="proj.p1.report">Lire le rapport complet (PDF)</a>
+                </div>
               </div>
-            </div>
+            </article>
           </div>
-          <div class="col-md-6">
-            <div class="card project-card">
-              <h3 data-i18n="proj.p2.title">Conception d'une fosse à ciel ouvert sous Surpac</h3>
-              <div class="meta" data-i18n="proj.p2.meta">Mars — Mai 2025 · E.S. Polytechnique Nouakchott</div>
-              <p data-i18n="proj.p2.desc">Modélisation du gisement, optimisation de la fosse ultime par les algorithmes de Lerchs-Grossmann et du cône flottant, optimisation des angles de talus et du design de fosse.</p>
-              <div>
-                <span class="badge-pill">Surpac</span>
-                <span class="badge-pill" data-i18n="proj.p2.tag1">Lerchs-Grossmann</span>
-                <span class="badge-pill" data-i18n="proj.p2.tag2">Pit design</span>
+          <div class="col-12">
+            <article class="card project-card">
+              <figure class="project-visual">
+                <img src="assets/img/open-pit-model.jpg" alt="Visualisation 3D d'un modèle minier pour l'étude de fosse à ciel ouvert" data-i18n-alt="proj.p2.imageAlt" width="913" height="768" loading="lazy" decoding="async">
+                <figcaption data-i18n="proj.p2.imageCaption">Visualisation 3D du modèle minier</figcaption>
+              </figure>
+              <div class="project-content">
+                <h3 data-i18n="proj.p2.title">Optimisation d'une fosse ultime à ciel ouvert</h3>
+                <div class="meta" data-i18n="proj.p2.meta">Mars — Mai 2025 · E.S. Polytechnique Nouakchott · rapport daté du 10 janv. 2026</div>
+                <p class="project-summary" data-i18n="proj.p2.desc">Étude collaborative d'optimisation de fosse par Lerchs–Grossmann : formulation d'un modèle de blocs et résolution de la limite économique sous une contrainte de pente de 45°.</p>
+                <div class="project-details">
+                  <div class="project-detail">
+                    <h4 data-i18n="proj.p2.methodTitle">Modélisation</h4>
+                    <p data-i18n="proj.p2.method">Un gisement simplifié de 5 lignes × 8 colonnes attribue un profit à chacun des 40 blocs. Les relations de précédence représentant la pente relient les blocs qui doivent être extraits ensemble. Un graphe de flot maximal/coupe minimale (NetworkX) détermine l'ensemble optimal.</p>
+                  </div>
+                  <div class="project-detail">
+                    <h4 data-i18n="proj.p2.outputTitle">Résultat du cas étudié</h4>
+                    <p data-i18n="proj.p2.output">Pour ce jeu de données pédagogique, la solution satisfait les contraintes de précédence, sélectionne 16 blocs et atteint un objectif de profit de 19 unités du modèle. Les blocs et la matrice de fosse sont exportés pour vérification et visualisation.</p>
+                  </div>
+                </div>
+                <div class="project-footer">
+                  <div class="project-tags">
+                    <span class="badge-pill">Python</span>
+                    <span class="badge-pill">NetworkX</span>
+                    <span class="badge-pill" data-i18n="proj.p2.tag1">Lerchs–Grossmann</span>
+                    <span class="badge-pill" data-i18n="proj.p2.tag2">Pente 45°</span>
+                  </div>
+                  <a class="project-report-link" href="assets/projects/open-pit-optimization-report.pdf" target="_blank" rel="noopener noreferrer" data-i18n="proj.p2.report">Lire le rapport complet (PDF)</a>
+                </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
